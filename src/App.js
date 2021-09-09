@@ -1,23 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import { toast } from "react-toastify";
+import "./App.css";
+import CreditCard from "./components/CreditCard";
+import ModalReact from "./components/Modal";
+import ReactCountup from "./components/ReactCountup";
+import ReactIcons from "./components/ReactIcons";
+import ReactIdleTimmer from "./components/ReactIdleTimmer";
+import ReactTippyComponent from "./components/ReactTippyComponent";
+import ToastNotification from "./components/ToastNotification";
+
+toast.configure();
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* <ReactIcons />
+      <ToastNotification />
+      <ModalReact />
+      <ReactTippyComponent />
+      <ReactCountup />
+      <ReactIdleTimmer /> */}
+      <CreditCard />
     </div>
   );
 }
